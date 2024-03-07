@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1,
+h3 {
+
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+label {
+  font-size: larger;
+  font-weight: 500;
+}
+
+h1,
+h3,
+label {
+  width: 80%;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+h3 {
+  background-color: rgb(118, 223, 114);
+  border-radius: 15px;
+  width: 50%;
+}
+
+body {
+  background-color: rgb(226, 183, 183);
+}
+
+input,
+button {
+  margin: 1vw;
+  width: 70%;
+  max-width: 100%;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: large;
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.formContainer {
+  border: 1px black solid;
+  border-radius: 8px;
+  background-color: rgb(216, 146, 146);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vw;
+}
+
+form {
+  margin: 3vw;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(199, 102, 73);
+  border-radius: 10px;
+  align-items: center;
+  background-color: rgb(221, 150, 122);
+  width: 70%;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.checkboxContainer>div {
+  margin: 0.5rem;
+}
+
+.checkboxContainer label {
+  width: 80%;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
