@@ -3,9 +3,20 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5rem 2rem 2rem;
   text-align: center;
 }
+
+:root {
+  --color-primary: rgb(226, 183, 183);
+  --color-secundary: rgb(216, 146, 146);
+  --color-form-border: rgb(199, 102, 73);
+  --color-form: rgb(221, 150, 122);
+  --color-success: rgb(118, 223, 114);
+  --color-header: rgb(189, 101, 101);
+  --color-hover: rgb(218, 120, 120);
+}
+
 
 * {
   font-family: "Caveat", cursive;
@@ -37,13 +48,14 @@ label {
 }
 
 h3 {
-  background-color: rgb(118, 223, 114);
+  background-color: var(--color-success);
   border-radius: 15px;
   width: 50%;
 }
 
 body {
-  background-color: rgb(226, 183, 183);
+  background-color: var(--color-primary);
+  overflow-y: scroll;
 }
 
 input,
@@ -67,7 +79,7 @@ button {
 .formContainer {
   border: 1px black solid;
   border-radius: 8px;
-  background-color: rgb(216, 146, 146);
+  background-color: var(--color-secundary);
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -79,10 +91,10 @@ form {
   margin: 3vw;
   display: flex;
   flex-direction: column;
-  border: 3px solid rgb(199, 102, 73);
+  border: 3px solid var(--color-form-border);
   border-radius: 10px;
   align-items: center;
-  background-color: rgb(221, 150, 122);
+  background-color: var(--color-form);
   width: 70%;
 }
 
@@ -103,4 +115,94 @@ form {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
+}
+
+.headerContainer {
+  width: 100%;
+  background-color: var(--color-header);
+  height: 50px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+
+.headerContainer nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.headerContainer nav a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+  font-size: 2rem;
+  height: 100%;
+  text-align: center;
+  width: 33%;
+  line-height: 3rem;
+}
+
+.headerContainer nav a:hover {
+  cursor: pointer;
+  border-color: 1px solid black;
+  text-decoration: underline;
+  background-color: var(--color-hover);
+}
+
+.dayContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day {
+  flex: 2;
+  order: 2;
+}
+
+.anterior,
+.posterior {
+  width: 5vw;
+  height: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  opacity: .8;
+  color: var(--color-header);
+}
+
+.anterior:hover,
+.posterior:hover {
+  opacity: 1;
+}
+
+.anterior {
+  order: 1;
+}
+
+.posterior {
+  order: 3;
+}
+
+.tareasContainer {
+  border: 1px black solid;
+  background-color: var(--color-form);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+li {
+  height: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  border: 1px black solid;
+  border-radius: 15px;
+  width: 90%;
 }
