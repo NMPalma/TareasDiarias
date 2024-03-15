@@ -1,12 +1,10 @@
-import React from 'react'
-
 const List = () => {
     return (
         <div className='tareasContainer'>
-
-            <li>Tarea 1</li>
-            <li>Tarea 2</li>
-            <li>Tarea 3</li>
+            <div className='tarea'>
+                <ul>Tarea 1</ul>
+                <button className="completeTarea">X</button>
+            </div>
 
         </div>
     )

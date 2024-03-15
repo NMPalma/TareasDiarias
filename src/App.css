@@ -120,7 +120,7 @@ form {
 .headerContainer {
   width: 100%;
   background-color: var(--color-header);
-  height: 50px;
+  /* height: 50px; */
   margin: auto;
   position: fixed;
   top: 0;
@@ -191,6 +191,7 @@ form {
 }
 
 .tareasContainer {
+  margin-top: 1vw;
   border: 1px black solid;
   background-color: var(--color-form);
   display: flex;
@@ -198,11 +199,27 @@ form {
   flex-direction: column;
 }
 
-li {
-  height: 3vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+.tarea {
+  margin: 1vw 0;
+  display: flex;
   border: 1px black solid;
   border-radius: 15px;
   width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vw;
+}
+
+.completeTarea {
+  width: 10%;
+  height: 100%;
+  margin-right: 0;
+}
+
+ul {
+  height: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  display: flex;
+  align-items: center;
 }
